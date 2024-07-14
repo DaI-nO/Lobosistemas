@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import PartMaterial
+from .serializers import PartMaterialSerializer
 
-# Create your views here.
+
+class PartMaterialViewSet(viewsets.ModelViewSet):
+    queryset = PartMaterial.objects.all()
+    serializer_class = PartMaterialSerializer

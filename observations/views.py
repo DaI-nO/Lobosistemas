@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Observation
+from .serializers import ObservationSerializer
 
-# Create your views here.
+
+class ObservationViewSet(viewsets.ModelViewSet):
+    queryset = Observation.objects.all()
+    serializer_class = ObservationSerializer

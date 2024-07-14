@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import AdditionalCost, TotalCost
 
-# Register your models here.
+admin.site.register(AdditionalCost)
+admin.site.register(TotalCost)
