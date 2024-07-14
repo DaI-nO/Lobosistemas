@@ -129,3 +129,5 @@ cython_debug/
 
 # Django media files (comment out if media directory is needed in version control)
 #media/
+
+.idea
