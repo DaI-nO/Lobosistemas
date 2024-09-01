@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and logs
+*.log
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+*.tmp
+
+# Folders to ignore
+venv
+.envrc
+.terraform
+.git
+.gitignore
+.cache
+.vscode
+.idea
+__pycache__
+media
+venv
+# Ignore all markdown documents
+*.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

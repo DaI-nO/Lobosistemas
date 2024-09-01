@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  django-app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - DJANGO_ENV=development
+    command: ["sh", "-c", "pip install -r requirements.txt && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
